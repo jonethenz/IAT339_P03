@@ -1,0 +1,58 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+  
+  body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: #97e7f5;
+  }
+  
+  .element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+    /* Adding space between the elements by creating a margin-bottom */
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    font-family: 'SPoppins', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    margin-bottom: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-top: 0;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 50%;
+    font-size: 0.8rem;
+  }
+  
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+  }
+  
+  code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+  }
