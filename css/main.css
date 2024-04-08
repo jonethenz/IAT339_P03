@@ -57,6 +57,37 @@
     display: block;
   }
 
+  .project-listing-1{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .project-listing-3{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .navigate{
+    margin-right: 20px;
+  }
+  
+  .middle-text{
+    text-align: center;
+  }
+  
+  .text-middle{
+    text-align: center;
+  }
+  
+  .project-listing-5{
+    display: block;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -86,9 +117,54 @@
 
   /* This is styling for the image to be responsive according to the web screen size */
   .element .project-listing img {
-    display: block;
     width: 100%;
     height: auto;
-    max-width: 100%;
     margin: 0 auto; 
   }
+
+  /* This is styling for the image to be responsive according to the web screen size */
+  .responsive-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+ 
+  @media only screen and (max-width: 1023px) {
+    .responsive-img{
+      max-width: 100%;
+    }
+  }
+
+  .project-listing-1{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .project-listing-3{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .navigate{
+    margin-right: 20px;
+  }
+  
+  .middle-text{
+    text-align: center;
+  }
+  
+  .text-middle{
+    text-align: center;
+  }
+  
+  .project-listing-5{
+    display: block;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
