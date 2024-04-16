@@ -268,5 +268,57 @@
         min-width: 0;
     }
   }
+
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+  }
+  
+  .project-image {
+    max-width: 50%; 
+    height: auto;
+    margin-right: 30px; 
+  }
+  
+  .project-description {
+    max-width: 50%;
+  }
+  
+  .project-container.reverse {
+    /* This is to reverse the project sections from the original state */
+    flex-direction: row-reverse;
+  }
+  
+  /* For reversing the project container image to the other side */
+  .project-container.reverse .project-image {
+    /* Resetting the right margin for the image */
+    margin-right: 0; 
+    /* Adding the left margin for spacing when reversed */
+    margin-left: 30px;
+  }
+  
+  /* For reversing the project container description text to the other side */
+  .project-container.reverse .project-description {
+    /* Resetting the left margin for the text */
+    margin-left: 0; 
+    /* Adding the right margin for spacing when reversed */
+    margin-right: 30px; 
+  }
+  
+  @media (max-width: 768px) {
+    .project-container, .project-container.reverse {
+        flex-direction: column;
+        /* Centering the text for mobile */
+        text-align: center; 
+    }
+  
+    .project-image, .project-description {
+        max-width: 100%;
+        /* Resetting the margins for mobile and to add space below the image */
+        margin: 0 0 30px 0; 
+    }
+  }
   
 
