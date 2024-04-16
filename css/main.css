@@ -79,7 +79,7 @@
   }
   
   h4 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
   }
@@ -180,11 +180,11 @@
 
   /* This is styling for the image to be responsive according to the web screen size */
   .responsive-img {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    object-fit: contain;
+    margin-bottom: 20px;
   }
  
   @media only screen and (max-width: 1023px) {
