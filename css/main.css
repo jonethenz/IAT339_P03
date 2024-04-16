@@ -2,11 +2,46 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+  /* This is to make the html page for the user to be able to scroll smoothly */ 
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* This is to make the header navigation stick to the top when user scrolls down on the website */ 
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Adding padding on the left and right sides of the header */
+    padding: 0 0px; 
+    margin-bottom: 60px;
+  }
   
   body {
     font-family: 'DM Sans', sans-serif;
     padding: 2rem;
     background-color: #97e7f5;
+  }
+
+  /* Colour Schemes */
+  .background-1 {
+    background-color: #3498db; 
+  }
+  
+  .background-2 {
+    background-color: #6778c8; 
+  }
+  
+  .background-3 {
+    background-color: #8168bf; 
+  }
+  
+  .background-gradient {
+    background-image: linear-gradient(to right, #3498db, #9b59b6); 
   }
   
   .element {
@@ -16,6 +51,14 @@
     border-top-color: black;
     /* Adding space between the elements by creating a margin-bottom */
     margin-bottom: 6rem;
+  }
+
+  section {
+    /* Adding padding space inside each section */
+    padding: 20px;
+
+    /* Adds space below each section */
+    margin-bottom: 60px; 
   }
 
   h1 {
@@ -37,14 +80,35 @@
   h4 {
     margin-bottom: 0.25rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   p {
     margin-top: 0;
     font-family: 'DM Sans', sans-serif;
-    max-width: 50%;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
+    text-align: left;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* Vertically centers the navigation pages */
+    align-items: center; 
+  }
+  
+  nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
+
+    /* Smooth transition for the color change of the hover effects */
+    transition: color 0.4s ease; 
+  }
+  
+  nav a:hover {
+    /* Changes color of the text link on hover */
+    color: #3498db; 
   }
   
   nav a:hover, nav a:focus {
@@ -76,6 +140,28 @@
   .text-link:focus {
     /* hover and focus state will change the color */
     color: #01377d; 
+  }
+
+  .read-more-button {
+    /* Setting the button background color to blue */
+    background-color: #007BFF;
+    /* Set the text color to white */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+  }
+  
+  .read-more-button:hover {
+    /* Setting a darker blue background color for the button on hover */
+    background-color: #0056b3; 
   }
 
   /* This is styling for the image placeholder that is not a link */
@@ -136,4 +222,50 @@
     margin-top: 2rem;
     gap: 2rem;
   }
+
+  .project-listing {
+    display: flex;
+    /* This is to align the items vertically in the center */
+    align-items: center; 
+    /* This is to put spacing between the image and text */
+    justify-content: space-between;
+    /* Allowing the items to wrap to the next line */
+    flex-wrap: wrap; 
+  }
+  
+  .project-listing img {
+    /* Maxing the image width to 80% but allows it to shrink */
+    max-width: 80%; 
+    /* Set the image aspect ratio to auto to keep the original aspect ratio while setting the width to responsive */
+    height: auto; 
+    min-width: 300px;
+  }
+  
+  .project-listing > div {
+    /* This will let the text div to fill the space next to the image */
+    flex: 1; 
+    padding: 20px;
+    min-width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .project-listing {
+      /* Stacks flex items vertically when window size is set to 768px */
+        flex-direction: column; 
+    }
+  
+    .project-listing img {
+      /* Makes the image take full width to 80% when window size is set to 768px*/
+        width: 80%; 
+        min-width: 0;
+    }
+  
+    .project-listing > div {
+      /* Makes the text div take full width */
+        width: 100%; 
+        padding: 10px;
+        min-width: 0;
+    }
+  }
+  
 
